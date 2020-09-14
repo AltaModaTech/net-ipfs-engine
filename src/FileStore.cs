@@ -195,7 +195,7 @@ namespace Ipfs.Engine
                 {
                     try
                     {
-                        stream.Dispose();
+                        await stream.DisposeAsync();
                         File.Delete(path);
                     }
                     catch (Exception)

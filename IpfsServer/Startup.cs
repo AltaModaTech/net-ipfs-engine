@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Newtonsoft.Json.Serialization;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace Ipfs.Server
@@ -32,15 +31,7 @@ namespace Ipfs.Server
         {
             services.AddSingleton<ICoreApi>(Program.IpfsEngine);
             services.AddCors();
-            services.AddMvc()
-                .AddJsonOptions(jo =>
-                {
-                    jo.SerializerSettings.ContractResolver = new DefaultContractResolver()
-                    {
-                        NamingStrategy = new DefaultNamingStrategy()
-                    };
-                })
-                ;
+            services.AddMvc();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>

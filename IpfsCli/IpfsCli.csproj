@@ -32,7 +32,7 @@
     <Copyright>© 2018-2019 Richard Schneider</Copyright>
     <PackageTags>ipfs peer-to-peer p2p distributed file-system web</PackageTags>
     <PackageProjectUrl>https://github.com/richardschneider/net-ipfs-engine</PackageProjectUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/richardschneider/net-ipfs-core/master/doc/images/ipfs-cs-logo-64x64.png</PackageIconUrl>
+    <PackageIcon>https://raw.githubusercontent.com/richardschneider/net-ipfs-core/master/doc/images/ipfs-cs-logo-64x64.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
